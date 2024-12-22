@@ -1,0 +1,704 @@
+{
+	"info": {
+		"_postman_id": "a640572d-232c-49e3-b7bc-0867f75d6b40",
+		"name": "qp-assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32905472"
+	},
+	"item": [
+		{
+			"name": "Create Grocery Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery-management",
+						"api",
+						"v1",
+						"grocery-item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Grocery Item Admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"grocery-item"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 12:06:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 15,\n    \"message\": \"Item created Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Grocery Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery-management",
+						"api",
+						"v1",
+						"grocery-item",
+						"14"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Grocery Item Admin",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"grocery-item",
+								"14"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 12:07:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update Grocery Item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery-management",
+						"api",
+						"v1",
+						"grocery-item",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Name, desc,etc of Grocery Admin",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Apple Imported\",\r\n    \"description\":\"Apple imported from FIJI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"grocery-item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 12:08:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Apple Imported\",\n    \"price\": 15,\n    \"quantity\": 80,\n    \"description\": \"Apple imported from FIJI\"\n}"
+				},
+				{
+					"name": "Manage Inventory Admin",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\":100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"grocery-item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 12:09:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Apple Imported\",\n    \"price\": 15,\n    \"quantity\": 100,\n    \"description\": \"Apple imported from FIJI\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Grocery Items",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery-management",
+						"api",
+						"v1",
+						"grocery-item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Grocery Items Admin/User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"grocery-item"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 12:09:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Carrot\",\n        \"price\": 20,\n        \"quantity\": 200,\n        \"description\": \"Organic carrots, crunchy and healthy\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Broccoli\",\n        \"price\": 120,\n        \"quantity\": 80,\n        \"description\": \"Fresh broccoli, packed with vitamins\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Eggs\",\n        \"price\": 45,\n        \"quantity\": 180,\n        \"description\": \"Fresh eggs, dozen pack\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Cheese\",\n        \"price\": 90,\n        \"quantity\": 90,\n        \"description\": \"Cheddar cheese, 500 grams\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Rice\",\n        \"price\": 35,\n        \"quantity\": 60,\n        \"description\": \"Basmati rice, 1 kg\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Tomato\",\n        \"price\": 60,\n        \"quantity\": 200,\n        \"description\": \"Fresh tomatoes, great for salads and sauces\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Milk\",\n        \"price\": 28,\n        \"quantity\": 117,\n        \"description\": \"Full-fat milk, 1 liter\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Banana\",\n        \"price\": 30,\n        \"quantity\": 148,\n        \"description\": \"Ripe yellow bananas, perfect for smoothies\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Bread\",\n        \"price\": 20,\n        \"quantity\": 149,\n        \"description\": \"Whole wheat bread, soft and fresh\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"KIWI\",\n        \"price\": 140.5,\n        \"quantity\": 30,\n        \"description\": \"Fresh KIWI 6 piece\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Apple Imported\",\n        \"price\": 15,\n        \"quantity\": 100,\n        \"description\": \"Apple imported from FIJI\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Grocery Item with ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery-management",
+						"api",
+						"v1",
+						"grocery-item",
+						"14"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Grocery Items Using Id Admin/User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"KIWI\",\r\n    \"description\":\"Fresh KIWI 6 piece\",\r\n    \"quantity\":30,\r\n    \"price\":140.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/grocery-item/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"grocery-item",
+								"14"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 08:22:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"14\",\n    \"name\": \"KIWI\",\n    \"price\": 140.5,\n    \"quantity\": 30,\n    \"description\": \"Fresh KIWI 6 piece\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Place Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 2,\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"id\": 8,\r\n        \"quantity\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery-management/api/v1/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery-management",
+						"api",
+						"v1",
+						"order"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Place Order User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": 2,\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"id\": 8,\r\n        \"quantity\": 1\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 12:10:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 22,\n    \"message\": \"Order Placed with Order ID 22\",\n    \"Total Amount\": 80\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Order Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 2,\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"id\": 8,\r\n        \"quantity\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery-management/api/v1/order/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery-management",
+						"api",
+						"v1",
+						"order",
+						"22"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Order Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": 2,\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"id\": 8,\r\n        \"quantity\": 1\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/grocery-management/api/v1/order/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grocery-management",
+								"api",
+								"v1",
+								"order",
+								"22"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 12:11:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderId\": 22,\n    \"address\": \"Pune\",\n    \"items\": [\n        {\n            \"name\": \"Banana\",\n            \"price\": 60,\n            \"quantity\": 2\n        },\n        {\n            \"name\": \"Bread\",\n            \"price\": 20,\n            \"quantity\": 1\n        }\n    ],\n    \"totalAmount\": 80,\n    \"orderDate\": \"2024-12-22T12:10:40.040944\"\n}"
+				}
+			]
+		}
+	]
+}
